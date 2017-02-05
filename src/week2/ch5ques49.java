@@ -22,17 +22,15 @@ public class ch5ques49 {
         int vowels = 0;
         int cons = 0;
         for (int i = 0; i < length; i++) {
-            if (string.charAt(i) == ' '){
-                ;
-            }
-            else if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
+            if (string.charAt(i) >= 'a' && string.charAt(i) <= 'z') {
+            if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
                 vowels = vowels + 1;
             }
             else{
                 cons = cons +1;
             }
             
-        }
+        }}
         System.out.println("The number of vowels is " + vowels+".");
         System.out.println("The number of consonants is " + cons+".");
     }
